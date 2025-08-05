@@ -3,10 +3,10 @@ import { initializeApp } from "firebase/app";
 import {getFirestore} from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCl4s_NwUjKjLxBaA2nAGCxNGl-95a6IAY",
-  authDomain: "note-nest-acafd.firebaseapp.com",
-  projectId: "note-nest-acafd",
-  storageBucket: "note-nest-acafd.firebasestorage.app",
+  apiKey: process.env.PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.PUBLIC_FIREBASE_STORAGE_BUCKET,
   messagingSenderId: "352912144516",
   appId: "1:352912144516:web:b4fddd60a9b4e00cacaad1",
 };
